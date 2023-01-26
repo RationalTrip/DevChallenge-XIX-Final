@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  miners.webapi:
+    image: ${DOCKER_REGISTRY-}minerswebapi
+    build:
+      context: .
+      dockerfile: source/Miners.WebApi/Dockerfile
